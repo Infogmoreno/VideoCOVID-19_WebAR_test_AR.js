@@ -21,7 +21,7 @@
     font-size: 12px;
     margin: 4px 2px;
     cursor: pointer;
-    border-radius: 12px;
+    border-radius: 6px;
     border: 2px solid rgba(9, 148, 28, 0.541);
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
   }
@@ -117,13 +117,7 @@ if (markerFound == 1) {
                 bezierEvaluate(p0.x, p1.x, p2.x, p3.x, t),                   
                 bezierEvaluate(p0.y, p1.y, p2.y, p3.y, t),                   
                 bezierEvaluate(p0.z, p1.z, p2.z, p3.z, t)               
-            ); 
-                                                                  
-        window.onload = function(e) {
-          document.getElementById("btn1").onclick = function() {
-          this.href = "videos/Tabla_evolucion_lineas_COVID-19.mp4";
-          };
-}();
+            );                                                                
         }     
     }
 });
