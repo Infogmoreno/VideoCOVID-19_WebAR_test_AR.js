@@ -32,7 +32,7 @@
   </style>
 
 <div style='position: fixed; bottom:50px; width:100%; text-align: center; z-index: 1;'>
-    <button class="button" id="btn1">Grafico 1</button>
+    <button class="button" id="btn1" onclick="redirect()>Grafico 1</button>
     <button class="button" id="btn2">Grafico 2</button>
        
   </div>!-- END: Top HTML -->
@@ -117,7 +117,11 @@ if (markerFound == 1) {
                 bezierEvaluate(p0.x, p1.x, p2.x, p3.x, t),                   
                 bezierEvaluate(p0.y, p1.y, p2.y, p3.y, t),                   
                 bezierEvaluate(p0.z, p1.z, p2.z, p3.z, t)               
-            );           
+            ); 
+                                                                  
+        redirect(#Video_Asset_0) {
+            window.location.href = "http://test/?sessionid=guest&ref="+booktype.value+pagesize.value+"&projectName="+projtitle.value+"/"
+            }
         }     
     }
 });
