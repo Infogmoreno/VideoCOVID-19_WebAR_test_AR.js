@@ -49,17 +49,7 @@ Video_graf_linea_1.muted=false;
 button.innerHTML="Unmute";
 Video_graf_linea_1.muted=true;
 }
-document.getElementById("btn1").addEventListener("click", (e)=>{
 
-  var v = document.querySelector('#Video_graf_barra_Asset_0').style.opacity = "1.0";=true;
-  var v = document.querySelector('#Video_graf_barra_Asset_1').style.opacity = "1.0";=false;
-     
-}) 
- document.getElementById("btn2").addEventListener("click", (e)=>{
-
-  var v = document.querySelector('#Video_graf_barra_Asset_0').style.opacity = "1.0";=false;
-   var v = document.querySelector('#Video_graf_barra_Asset_1').style.opacity = "1.0";=true;   
-})
 });
 
         fullbutton.addEventListener("click", function (evt) {
@@ -91,6 +81,15 @@ document.getElementById("btn1").addEventListener("click", (e)=>{
                 fullbutton.setAttribute("src", "../fullscreen.png");
                 fullscreen = 0;
             }
+       window.onload = function () {
+      document
+        .querySelector("btn1")
+        .addEventListener("click", function () {
+          // here you can change also a-scene or a-entity properties, like
+          // changing your 3D model source, size, position and so on
+          // or you can just open links, trigger actions...
+          alert("Hi there!");
+        });
         });
 },
 tick: function (totalTime, deltaTime) {
