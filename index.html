@@ -18,23 +18,36 @@ var elem = document.documentElement;
 var marker = document.querySelector("#marker");
 var fullbutton = document.querySelector("#fullscreen");
 var button = document.querySelector("#mutebutton");
-var Video_0 = document.querySelector("#Video_Asset_0");
+var Video_graf_barra_0 = document.querySelector("#Video_graf_barra_Asset_0");
+var Video_graf_linea_1 = document.querySelector("#Video_graf_linea_Asset_1");
 marker.addEventListener("markerFound", function (evt) {
 markerFound = 1;
-Video_0.play();
+Video_graf_barra_0.play();
+Video_graf_linea_1.play();
 });
 marker.addEventListener("markerLost", function (evt) {
 markerFound = 0;
-Video_0.pause();
+Video_graf_barra_0.pause();
+Video_graf_linea_1.pause();
 });
 button.addEventListener("click", function(evt){
 console.log("button clicked")
-if(Video_0.muted==true){
+if(Video_graf_barra_0.muted==true){
 button.innerHTML="Mute";
-Video_0.muted=false;
+Video_graf_barra_0.muted=false;
 }else{
 button.innerHTML="Unmute";
-Video_0.muted=true;
+Video_graf_barra_0.muted=true;
+}
+});
+button.addEventListener("click", function(evt){
+console.log("button clicked")
+if(Video_graf_linea_1.muted==true){
+button.innerHTML="Mute";
+Video_graf_linea_1.muted=false;
+}else{
+button.innerHTML="Unmute";
+Video_graf_linea_1.muted=true;
 }
 });
 
@@ -118,7 +131,8 @@ if (markerFound == 1) {
 
 <!-- BEGIN: Unity Compiled Assets -->
 <a-assets>
-<video id="Video_Asset_0" autoplay="false" loop crossorigin="anonymous" src="videos/Tabla_evolucion_barras_COVID-19.mp4" webkit-playsinline playsinline controls muted></video>
+<video id="Video_graf_barra_Asset_0" autoplay="false" loop crossorigin="anonymous" src="videos/Tabla_evolucion_barras_COVID-19.mp4" webkit-playsinline playsinline controls muted></video>
+<video id="Video_graf_linea_Asset_1" autoplay="false" loop crossorigin="anonymous" src="videos/Tabla_evolucion_lineas_COVID-19.mp4" webkit-playsinline playsinline controls muted></video>
 </a-assets>
 <!-- END: Unity Compiled Assets -->
 <!-- BEGIN: Add Image Target (marker) -->
@@ -126,7 +140,9 @@ if (markerFound == 1) {
 <!-- END: Add Image Target (marker) -->
 
 <!-- BEGIN: Unity Compiled Objects -->
-<a-video width="1" height="0.5727043" src="#Video_Asset_0" class="intersectable" position="0 0.296 0" rotation="0 0 0" color="#FFFFFF" 
+<a-video width="1" height="0.5727043" src="#Video_graf_barra_Asset_0" class="intersectable" position="0 0.296 0" rotation="0 0 0" color="#FFFFFF" 
+></a-video>
+<a-video width="1" height="0.5727043" src="#Video_graf_linea_Asset_1" class="intersectable" position="0 0.296 0" rotation="0 0 0" color="#FFFFFF" 
 ></a-video>
 <!-- END: Unity Compiled Objects -->
 
