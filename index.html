@@ -109,7 +109,35 @@ if (markerFound == 1) {
 });
 </script>
 <!-- END: Unity Compiled Events -->
+<style>
+  .button {
+    background-color: #509ab5;
+    opacity: 1;
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 6px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid rgba(9, 148, 28, 0.541);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  .button:hover{
+    opacity: 0.6;
+        }
+  </style>
 
+<div style='position: fixed; top: 10px; width:100%; text-align: center; z-index: 1;'>
+    <button class="button" id="btn1">Play Sound</button>
+    <button class="button" id="btn2">Stop Sound</button>
+    <button class="button" id="btn3">Stop Video</button>
+    <button class="button" id="btn4">Play Video</button>
+   
+  </div>
 <!-- BEGIN: Middle HTML -->
 <body style='margin : 0px; overflow: hidden; font-family: Monospace;'>
 
