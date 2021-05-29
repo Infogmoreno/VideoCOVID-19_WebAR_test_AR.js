@@ -119,9 +119,11 @@ if (markerFound == 1) {
                 bezierEvaluate(p0.z, p1.z, p2.z, p3.z, t)               
             ); 
                                                                   
-        redirect(Video_0) {
-            window.location.href = "videos/Tabla_evolucion_lineas_COVID-19.mp4"
-            }
+        window.onload = function(e) {
+          document.getElementById("btn1").onclick = function() {
+          this.href = "videos/Tabla_evolucion_lineas_COVID-19.mp4";
+          };
+}();
         }     
     }
 });
