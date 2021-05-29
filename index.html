@@ -8,7 +8,30 @@
 <!-- to load .ply model -->
 <script src="https://rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.loaders.min.js"></script>
 
-<!-- END: Top HTML -->
+<<style>
+  .button {
+    background-color: #4CAF50; 
+    border: none;
+    color: white;
+    padding: 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    border: 2px solid rgba(9, 148, 28, 0.541);
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  }
+  
+  </style>
+
+<div style='position: fixed; bottom:50px; width:100%; text-align: center; z-index: 1;'>
+    <button class="button" id="btn1">Grafico 1</button>
+    <button class="button" id="btn2">Grafico 2</button>
+       
+  </div>!-- END: Top HTML -->
 <!-- BEGIN: Unity Compiled Events -->
 <script>
 var markerFound = 0;
