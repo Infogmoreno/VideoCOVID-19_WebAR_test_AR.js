@@ -49,7 +49,17 @@ Video_graf_linea_1.muted=false;
 button.innerHTML="Unmute";
 Video_graf_linea_1.muted=true;
 }
+document.getElementById("btn1").addEventListener("click", (e)=>{
 
+  var el = document.querySelector('#Video_graf_barra_Asset_0');
+  
+  el.(setAtributte("Object01" 'obj:url(videos/Tabla_evolucion_barras_COVID-19.mp4)');
+      
+document.getElementById("btn2").addEventListener("click", (e)=>{
+
+  var el = document.querySelector('#Video_graf_barra_Asset_0');
+  
+  el.(setAtributte("Object02" 'obj:url(videos/Tabla_evolucion_lineas_COVID-19.mp4)');
 });
 
         fullbutton.addEventListener("click", function (evt) {
@@ -80,15 +90,7 @@ Video_graf_linea_1.muted=true;
                 }
                 fullbutton.setAttribute("src", "../fullscreen.png");
                 fullscreen = 0;
-            }
-                
- document.getElementById("btn1").onclick = function() {
-                this.href = "videos/Tabla_evolucion_barras_COVID-19.mp4";
-                };
-                
-  document.getElementById("btn2").onclick = function() {
-                this.href = "videos/Tabla_evolucion_lineas_COVID-19.mp4";
-                };               
+            }             
         });
 },
 tick: function (totalTime, deltaTime) {
