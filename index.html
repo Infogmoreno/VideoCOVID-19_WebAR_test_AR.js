@@ -53,16 +53,16 @@ Video_graf_linea_1.muted=true;
 document.getElementById("btn1").addEventListener("click", (e)=>{
   
   function setScene1() {
-				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'false');
-				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'true');
+				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'false');
+				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'true');
 			}
  })
       
   document.getElementById("btn2").addEventListener("click", (e)=>{
 
   	function setScene2() {
-				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'false');
-				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'true');
+				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'true');
+				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'false');
 			}
  })
   
@@ -149,8 +149,8 @@ if (markerFound == 1) {
   </style>
 
 <div style='position: fixed; bottom: 60px; width:100%; text-align: center; z-index: 1;'>
-    <button class="button" id="btn1" onclick="setScene1()" >Gráfico COVID barras"</button>
-    <button class="button" id="btn2" onclick="setScene2()" >Gráfico COVID líneas"</button>
+    <button class="button" id="btn1" onclick="setScene1()">Gráfico COVID barras"</button>
+    <button class="button" id="btn2" onclick="setScene2()">Gráfico COVID líneas"</button>
        
   </div>
 <!-- BEGIN: Middle HTML -->
