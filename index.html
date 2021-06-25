@@ -51,27 +51,20 @@ Video_graf_linea_1.muted=true;
 }
   
 document.getElementById("btn1").addEventListener("click", (e)=>{
-
-  var el = document.querySelector("#Video_graf_barra_Asset_0");
-  var el1 = document.querySelector("#Video_graf_barra_Asset_1");
   
-  el.object3D.visible = true; 
-  el.object3D.scale = 2.5 2.5 2.5;
-  el1.object3D.visible = false;
-  el1.object3D.scale = 2.5 2.5 2.5;
-})
+  function setScene1() {
+				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'false');
+				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'true');
+			}
+ })
       
   document.getElementById("btn2").addEventListener("click", (e)=>{
 
-  var el = document.querySelector("#Video_graf_linea_Asset_1");
-  var el1 = document.querySelector("#Video_graf_linea_Asset_0");
-  
-  el.object3D.visible = true; 
-  el.object3D.scale = 2.5 2.5 2.5;
-  el1.object3D.visible = false;
-  el1.object3D.scale = 2.5 2.5 2.5;
+  	function setScene2() {
+				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'false');
+				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'true');
+			}
  })
-  
   
 
 });
@@ -156,8 +149,8 @@ if (markerFound == 1) {
   </style>
 
 <div style='position: fixed; bottom: 60px; width:100%; text-align: center; z-index: 1;'>
-    <button class="button" id="btn1">Gráfico COVID barras</button>
-    <button class="button" id="btn2">Gráfico COVID líneas</button>
+    <button class="button" id="btn1">Gráfico COVID barras onclick="setScene1()"</button>
+    <button class="button" id="btn2">Gráfico COVID líneas onclick="setScene2()"</button>
        
   </div>
 <!-- BEGIN: Middle HTML -->
