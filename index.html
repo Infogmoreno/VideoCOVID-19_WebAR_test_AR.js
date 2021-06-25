@@ -50,24 +50,23 @@ button.innerHTML="Unmute";
 Video_graf_linea_1.muted=true;
 }
   
-document.getElementById("btn1").addEventListener("click", (e)=>{
-  
+ 
   function setScene1() {
 				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'false');
 				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'true');
 			}
- })
+
       
-  document.getElementById("btn2").addEventListener("click", (e)=>{
+  
 
   	function setScene2() {
 				document.querySelector('#Video_graf_linea_Asset_1').setAttribute('visible', 'true');
 				document.querySelector('#Video_graf_linea_Asset_0').setAttribute('visible', 'false');
 			}
- })
+
   
 
-});
+
 
         fullbutton.addEventListener("click", function (evt) {
             if (fullscreen == 0) {
